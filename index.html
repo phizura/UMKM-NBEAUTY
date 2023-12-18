@@ -19,26 +19,50 @@
       data-bs-smooth-scroll="true"
       class="scrollspy-example bg-body-tertiary p-3 rounded-2"
       tabindex="0">
-      <nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3 fixed-top mb-5">
-            <a class="navbar-brand" href="#">MUJAHIDIN</a>
-            <ul class="nav nav-pills m-auto">
-               <li class="nav-item">
+      <nav
+      class="navbar navbar-expand-md bg-body-transparent sticky-top mynavbar"
+   >
+      <div class="container">
+         <a class="navbar-brand" href="#">JavaMan</a>
+         <button
+            class="navbar-toggler border-0"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+         >
+            <span class="navbar-toggler-icon"></span>
+         </button>
+         <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+         >
+            <div class="offcanvas-header">
+               <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                  Barudak 
+               </h5>
+               <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+               ></button>
+            </div>
+            <div class="offcanvas-body">
+               <div class="navbar-nav ms-auto">
                   <a class="nav-link" href="#home">Home</a>
-               </li>
-               <li class="nav-item">
                   <a class="nav-link" href="#lokasi">Lokasi</a>
-               </li>
-               <li class="nav-item">
                   <a class="nav-link" href="#keunggulan">Keunggulan</a>
-               </li>
-               <li class="nav-item">
                   <a class="nav-link" href="#pelayanan">Pelayanan</a>
-               </li>
-               <li class="nav-item">
-                  <a class="nav-link" href="#contanct">Kontak</a>
-               </li>
-            </ul>
-      </nav>
+                  <a class="nav-link" href="#contact">Kontak</a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </nav>
       <section class="home" id="home">
          <div class="container">
             <div class="row justify-content-center mt-5">
@@ -57,15 +81,14 @@
             <div class="row justify-content-center mt-5">
                <div class="col-md-4 text-center m-auto">
                   <h2>Kunjungi Kami Di</h2>
-                  <p>Dusun Kertas RT/RW 06/09 Desa Disana Kecamatan Disini Kabupaten Disitu</p>
+                  <p>Jl. Krajan Barat, RT.13/RW.02, Krajan, Kambingan, Kec. Tumpang, Kabupaten Malang, Jawa Timur 65156</p>
                </div>
                <div class="col-md-8 text-center">
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.112918863743!2d113.43390972380519!3d-7.777850177163652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd701c953d286e3%3A0x16084281ae24f3ff!2sKoloran%2C%20Gebangan%2C%20Kec.%20Krejengan%2C%20Kabupaten%20Probolinggo%2C%20Jawa%20Timur!5e0!3m2!1sid!2sid!4v1698597814508!5m2!1sid!2sid" 
-                     width="100%" height="290" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126433.58855043181!2d112.62900647958232!3d-7.993810735539224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd627e6bcb64bdd%3A0x696371394436acd3!2sNBeauty%20Shop!5e0!3m2!1sid!2sid!4v1702880015427!5m2!1sid!2sid" width="100%" height="290" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                      <a
-                        href="https://maps.app.goo.gl/D6Qkua1xUmxPWLgs9"
+                        href="https://maps.app.goo.gl/Z6JeDfQ8vd8BTVJw9"
                         target="_blank"
-                        class="btn btn-light btn-sm my-4"
+                        class="btn btn-light btn-sm my-4 bg-success"
                         >Klik untuk membuka</a
                      >
                </div>
@@ -74,7 +97,9 @@
       </section>
 
       <section id="keunggulan" class="keunggulan">
-         <div class="container">
+         <div class="container text-center">
+            <!-- <h2>Keunggulan</h2>
+            <h3>Keunggulan1</h3>
             <div class="row justify-content-center mt-5">
                <div class="col-md-4 text-center m-auto">
                   <img src="img/gambar-1.jpg" alt="gambar-1" class="img-fluid w-100">
@@ -87,8 +112,10 @@
                   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam, voluptas quia. Eos.</p>
                </div>
             </div>
+            -->
+            <h3>Keunggulan2</h3>
             <div class="row justify-content-around mt-5">
-               <div class="col-md-5 col-10">
+               <div class="col col-lg-3 col-md-6 col-sm-12">
                   <div class="card text-center text-bg-light mb-4">
                      <div class="card-header">Unggul</div>
                      <div class="card-footer">
@@ -96,7 +123,7 @@
                      </div>
                   </div>
                </div>
-               <div class="col-md-5 col-10">
+               <div class="col col-lg-3 col-md-6 col-sm-12">
                   <div class="card text-center text-bg-light mb-4">
                      <div class="card-header">Unggul</div>
                      <div class="card-footer">
@@ -104,7 +131,7 @@
                      </div>
                   </div>
                </div>
-               <div class="col-md-5 col-10">
+               <div class="col col-lg-3 col-md-6 col-sm-12">
                   <div class="card text-center text-bg-light mb-4">
                      <div class="card-header">Unggul</div>
                      <div class="card-footer">
@@ -112,7 +139,7 @@
                      </div>
                   </div>
                </div>
-               <div class="col-md-5 col-10">
+               <div class="col col-lg-3 col-md-6 col-sm-12">
                   <div class="card text-center text-bg-light mb-4">
                      <div class="card-header">Unggul</div>
                      <div class="card-footer">
