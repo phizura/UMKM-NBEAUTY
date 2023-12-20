@@ -1,3 +1,4 @@
+// scrolled
 document.addEventListener("DOMContentLoaded", function () {
   var navbar = document.getElementById("navbar");
 
@@ -17,11 +18,9 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-const navlinks = document.querySelectorAll(".nav-item");
-const menuToggle = document.getElementById("navbarText");
-const bsCollapse = bootstrap.Collapse.getOrCreateInstance(menuToggle, {
-  toggle: false,
-});
-navlinks.forEach((e) => {
-  e.addEventListener("click", () => bsCollapse.toggle());
+// toogler navbar hide
+$(document).ready(function () {
+  $(".nav-link").on("click", function () {
+    $(".navbar-collapse").collapse("hide");
+  });
 });
