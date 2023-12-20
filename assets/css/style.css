@@ -1,5 +1,4 @@
 #navbar {
-  /* background-image: linear-gradient(315deg, #fbb034 0%, #ffdd00 74%); */
   background-color: rgba(0, 0, 0, 0.2);
   transition: background-color 0.5s;
 }
@@ -26,5 +25,9 @@
 }
 
 .bg-color-maps {
+  background-color: #dbffe5;
+}
+
+.bg-color-us {
   background-color: #dbffe5;
 }
