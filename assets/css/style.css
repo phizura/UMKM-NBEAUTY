@@ -32,6 +32,10 @@
   background-color: #dbffe5;
 }
 
+.bg-color-footer{
+  background-color: tomato;
+}
+
 .crop-img {
   object-fit: cover;
 }
