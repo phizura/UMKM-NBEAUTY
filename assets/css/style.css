@@ -31,3 +31,7 @@
 .bg-color-us {
   background-color: #dbffe5;
 }
+
+.crop-img {
+  object-fit: cover;
+}
