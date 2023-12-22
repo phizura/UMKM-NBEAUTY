@@ -4,12 +4,7 @@
 }
 
 #navbar.scrolled {
-  background-color: rgba(
-    0,
-    0,
-    0,
-    0.9
-  );
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
 .bg-image {
@@ -21,19 +16,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #fff;
+  color: #ffff;
 }
 
 .bg-color-maps {
-  background-color: #dbffe5;
+  background-color: #f1ebe4;
 }
 
 .bg-color-us {
-  background-color: #dbffe5;
-}
-
-.bg-color-footer{
-  background-color: tomato;
+  background-color: #a7988b;
 }
 
 .crop-img {
@@ -45,8 +36,24 @@
   flex-diretion: column;
 }
 
-.wrapper-icon img{
+.wrapper-icon img {
   width: 35px;
   height: 35px;
   margin-right: 1rem;
+}
+
+.bg-color-footer {
+  background-color: #6e0d25;
+  color: #ffff;
+}
+
+.wrapper-last-footer {
+  padding: 1rem 0;
+  border-top: 2px solid #c4d3d6;
+}
+
+@media (max-width: 768px) {
+  .mobile-respon {
+    max-width: 90px;
+  }
 }
