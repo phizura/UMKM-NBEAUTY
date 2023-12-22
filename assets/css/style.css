@@ -39,3 +39,14 @@
 .crop-img {
   object-fit: cover;
 }
+
+.wrapper-col-2 a {
+  display: flex;
+  flex-diretion: column;
+}
+
+.wrapper-icon img{
+  width: 35px;
+  height: 35px;
+  margin-right: 1rem;
+}
