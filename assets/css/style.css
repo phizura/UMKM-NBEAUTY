@@ -1,5 +1,5 @@
 html, body{
-  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
 }
 
 #navbar {
@@ -12,7 +12,6 @@ html, body{
 }
 
 .bg-image {
-  background-color: rgba(0, 0, 0, 0.1);
   background-image: url("../img/img1.JPG");
   background-size: cover;
   background-position: center center;
@@ -24,50 +23,43 @@ html, body{
   color: #ffff;
 }
 
-.bg-color-maps {
-  background-color: #f1ebe4;
-}
-
-.bg-color-us {
-  background-color: #a7988b;
-}
-
-.crop-img {
-  object-fit: cover;
-}
-
-.wrapper-col-2 a {
-  display: flex;
-  flex-diretion: column;
-}
-
-.wrapper-icon img {
-  width: 35px;
-  height: 35px;
-  margin-right: 1rem;
-}
-
-.bg-color-footer {
-  background-color: #6e0d25;
-  color: #ffff;
-}
-
-.wrapper-last-footer {
-  padding: 1rem 0;
-  border-top: 2px solid #c4d3d6;
-}
-
-@media (max-width: 768px) {
-  .mobile-respon {
-    max-width: 90px;
-  }
+h4 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 50px;
 }
 
 /* HP */
-@media only screen and (max-width: 767px) {}
+@media only screen and (max-width: 767px) {
+  nav img {
+    width: 8rem;
+  }
+  h4 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.9rem;
+  }
+  p {
+    font-size: 0.8rem;
+  }
+}
 
 /* Tab */
-@media only screen and (min-width: 768px) and (max-width: 1023px) {}
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+  nav img {
+    width: 10rem;
+  }
+  h4 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 3.2rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+}
 
 /* Laptop */
-@media only screen and (min-width: 1024px) {}
+@media only screen and (min-width: 1024px) {
+  .bungkusan-h4-p{
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+}
