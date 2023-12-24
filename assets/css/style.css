@@ -28,6 +28,34 @@ h4 {
   font-size: 50px;
 }
 
+.bg-color-maps {
+  background-color: #f1ebe4;
+}
+
+.bg-color-us {
+  background-color: #a7988b;
+}
+
+.crop-img {
+  object-fit: cover;
+}
+
+.wrapper-icon img {
+  width: 35px;
+  height: 35px;
+  margin-right: 1rem;
+}
+
+.bg-color-footer {
+  background-color: #6e0d25;
+  color: #ffff;
+}
+
+.wrapper-last-footer {
+  padding: 1rem 0;
+  border-top: 2px solid #c4d3d6;
+}
+
 /* HP */
 @media only screen and (max-width: 767px) {
   nav img {
@@ -40,6 +68,15 @@ h4 {
   p {
     font-size: 0.8rem;
   }
+  .p-aboutUs p{
+    font-size: 0.9rem;
+  }
+  .p-product p {
+    font-size: 0.9rem;
+  }
+  .p-maps{
+    font-size: 0.9rem;
+  }
 }
 
 /* Tab */
@@ -51,8 +88,12 @@ h4 {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 3.2rem;
   }
-  p {
+  .p-home{
     font-size: 1rem;
+  }
+
+  .p-maps{
+    font-size: 0.9rem;
   }
 }
 
