@@ -1,3 +1,4 @@
+// scrolled
 document.addEventListener("DOMContentLoaded", function () {
   var navbar = document.getElementById("navbar");
 
@@ -15,4 +16,11 @@ document.addEventListener("DOMContentLoaded", function () {
       navbar.classList.remove("scrolled");
     }
   }
+});
+
+// toogler navbar hide
+$(document).ready(function () {
+  $(".nav-link").on("click", function () {
+    $(".navbar-collapse").collapse("hide");
+  });
 });
