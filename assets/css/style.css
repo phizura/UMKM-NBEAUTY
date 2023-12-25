@@ -24,6 +24,20 @@ body {
   color: #ffff;
 }
 
+.lingkaran{
+  display: inline-block;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin: auto;
+  background-color: #ffff;
+}
+
+.lingkaran img{
+  position: relative;
+  top: 11px;
+}
+
 h4 {
   font-family: "Josefin Sans", sans-serif;
   font-size: 50px;
