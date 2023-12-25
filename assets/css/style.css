@@ -9,7 +9,7 @@ body {
 }
 
 #navbar.scrolled {
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 1);
 }
 
 .bg-image {
@@ -24,7 +24,11 @@ body {
   color: #ffff;
 }
 
-.lingkaran{
+span img {
+  filter: drop-shadow(0px 0px 10px rgba(0 0 0 / 30%));
+}
+
+.lingkaran {
   display: inline-block;
   border-radius: 50%;
   width: 150px;
@@ -33,7 +37,7 @@ body {
   background-color: #ffff;
 }
 
-.lingkaran img{
+.lingkaran img {
   position: relative;
   top: 11px;
 }
@@ -47,9 +51,28 @@ h4 {
   background-color: #f1ebe4;
 }
 
-.bg-color-us {
-  background-color: #a7988b;
+.bg-choosUs {
+  background-color: #c4d3d6;
 }
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35vh;
+}
+
+.card-body {
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 18rem;
+}
+
+
+
 
 .crop-img {
   object-fit: cover;
@@ -97,6 +120,15 @@ h4 {
     justify-content: center;
     width: 20rem;
   }
+  .card {
+    margin-bottom: 1rem;
+  }
+  .card-title {
+    font-size: 1.2rem;
+  }
+  .card-text {
+    font-size: 14px;
+  }
 }
 
 /* Tab */
@@ -108,6 +140,16 @@ h4 {
     font-family: "Josefin Sans", sans-serif;
     font-size: 3.2rem;
   }
+
+  .card-body {
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 12rem;
+  }
+
   .p-home {
     font-size: 1rem;
   }
