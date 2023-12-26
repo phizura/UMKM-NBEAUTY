@@ -17,6 +17,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <nav
@@ -92,9 +93,9 @@
     <!-- CONTENT DUA Profile-->
     <section class="container-fluid pt-5 pb-5">
       <div class="container p-aboutUs">
-        <div class="row" id="profile">
+        <div class="row" id="profile" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
           <!-- Kolom untuk Gambar (sebelah kiri) -->
-          <div class="col-md-6 pt-5 pb-5">
+          <div class="col-md-6 pt-5 pb-5 text-center">
             <img
               src="./assets/img/blackpanther.jpg"
               alt="Gambar"
@@ -103,7 +104,7 @@
           </div>
 
           <!-- Kolom untuk Paragraf (sebelah kanan) -->
-          <div class="col-md-6 pt-md-5 pb-5">
+          <div class="col-md-6 pt-md-5 pb-5 text-center">
             <h2>About Us</h2>
             <div>
               <p>
@@ -126,7 +127,24 @@
       <div class="container text-center">
         <h2>Why Choose Us</h2>
         <div class="row pt-4 gx-4 gy-4">
-          <div class="col-md-4">
+          <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="750">
+            <div class="card crop-img">
+              <img
+                src="/assets/img/blackpanther.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title ">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4" data-aos="zoom-in" data-aos-delay="500" data-aos-duration="750">
             <div class="card crop-img">
               <img
                 src="/assets/img/blackpanther.jpg"
@@ -143,24 +161,7 @@
             </div>
           </div>
 
-          <div class="col-md-4">
-            <div class="card crop-img">
-              <img
-                src="/assets/img/blackpanther.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4">
+          <div class="col-md-4" data-aos="zoom-in" data-aos-delay="700" data-aos-duration="500">
             <div class="card crop-img">
               <img
                 src="/assets/img/blackpanther.jpg"
@@ -181,16 +182,18 @@
     </section>
 
     <!-- CONTENT TIGA Product-->
-    <section class="container-fluid pt-5 pb-5">
+    <section class="container-fluid pt-5 pb-5" >
       <div class="container p-product">
-        <h2 class="display-6 text-center" id="products">Products</h2>
-        <p class="text-center">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia sit
-          asperiores similique reiciendis molestias vero?
-        </p>
-        <div class="row" id="profile">
+        <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+          <h2 class="display-6 text-center" id="products">Products</h2>
+          <p class="text-center">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia sit
+            asperiores similique reiciendis molestias vero?
+          </p>
+        </div>
+        <div class="row" id="profile" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
           <!-- Kolom untuk Gambar (sebelah kiri) -->
-          <div class="col-md-6 order-2 pt-5 pb-5">
+          <div class="col-md-6 order-2 pt-5 pb-5 text-center">
             <img
               src="./assets/img/blackpanther.jpg"
               alt="Gambar"
@@ -199,7 +202,7 @@
           </div>
 
           <!-- Kolom untuk Paragraf (sebelah kanan) -->
-          <div class="col-md-6 pt-md-5">
+          <div class="col-md-6 pt-md-5 text-center">
             <h2>Produk</h2>
             <p>
               Ini adalah paragraf teks yang berada di sebelah kanan gambar. Anda
@@ -325,5 +328,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init();</script>
   </body>
 </html>
