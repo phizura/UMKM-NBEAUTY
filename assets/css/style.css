@@ -71,7 +71,30 @@ h4 {
   width: 18rem;
 }
 
+.bg-color {
+  background-color: #F5F7F8;
+  background-size: cover;
+  background-position: center center;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.container-widget {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+hr {
+  width: 100px;
+}
+
+hr.solid {
+  border-top: 3px solid #595959;
+}
 
 
 .crop-img {

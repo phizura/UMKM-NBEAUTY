@@ -199,34 +199,81 @@
     </section>
 
     <!-- CONTENT TIGA Product-->
-    <section class="container-fluid pt-5 pb-5">
-      <div class="container p-product">
-        <h2 class="display-6 text-center" id="products">Products</h2>
-        <p class="text-center">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia sit
-          asperiores similique reiciendis molestias vero?
-        </p>
-        <div class="row" id="profile">
-          <!-- Kolom untuk Gambar (sebelah kiri) -->
-          <div class="col-md-6 order-2 pt-5 pb-5">
-            <img
-              src="./assets/img/blackpanther.jpg"
-              alt="Gambar"
-              class="img-fluid"
-            />
+    <section class="container-fluid pt-5 pb-5 bg-color">
+      <div class="container">
+        <div class="content-wrap text-center" id="products">
+          <div class="head-text">
+            <h2>Our Product</h2>
           </div>
-
-          <!-- Kolom untuk Paragraf (sebelah kanan) -->
-          <div class="col-md-6 pt-md-5">
-            <h2>Produk</h2>
+          <div class="widget-line">
+            <div class="container-widget">
+              <hr class="solid" />
+            </div>
+          </div>
+          <div class="text-paragraf">
             <p>
-              Ini adalah paragraf teks yang berada di sebelah kanan gambar. Anda
-              dapat menambahkan konten teks atau elemen HTML lainnya di sini.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
+              ducimus deserunt necessitatibus a pariatur natus labore cupiditate
+              delectus ad nobis!
             </p>
-            <p>
-              Ini adalah paragraf teks yang berada di sebelah kanan gambar. Anda
-              dapat menambahkan konten teks atau elemen HTML lainnya di sini.
-            </p>
+          </div>
+          <div class="korosel-produk pt-4">
+            <div
+              id="carouselExampleInterval"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div
+                  class="carousel-item crop-img active"
+                  data-bs-interval="5000"
+                >
+                  <img
+                    src="assets/img/blackpanther.jpg"
+                    class="d-block w-100 img-fluid"
+                    alt=""
+                  />
+                </div>
+                <div class="carousel-item crop-img" data-bs-interval="5000">
+                  <img
+                    src="assets/img/img1.JPG"
+                    class="d-block w-100 img-fluid"
+                    alt=".."
+                  />
+                </div>
+                <div class="carousel-item crop-img" data-bs-interval="5000">
+                  <img
+                    src="assets/img/img2.JPG"
+                    class="d-block w-100 img-fluid"
+                    alt=".."
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleInterval"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleInterval"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
           </div>
         </div>
       </div>
