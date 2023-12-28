@@ -1,4 +1,9 @@
-html, body{
+/* font-family: 'Josefin Sans', sans-serif;
+font-family: 'Poppins', sans-serif; */
+
+html,
+body {
+  font-family: 'Poppins', sans-serif;
   font-size: 16px;
 }
 
@@ -8,11 +13,11 @@ html, body{
 }
 
 #navbar.scrolled {
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 1);
 }
 
 .bg-image {
-  background-image: url("../img/img1.JPG");
+  background-image: url("../img/cover.png");
   background-size: cover;
   background-position: center center;
   min-height: 100vh;
@@ -23,21 +28,104 @@ html, body{
   color: #ffff;
 }
 
+span img {
+  filter: drop-shadow(0px 0px 10px rgba(0 0 0 / 30%));
+}
+
+/* .lingkaran {
+  display: inline-block;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin: auto;
+  background-color: #ffff;
+}
+
+.lingkaran img {
+  position: relative;
+  top: 11px;
+} */
+
 h4 {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: bold;
   font-size: 50px;
 }
+
+.isi-aboutUs{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-title {
+  font-weight: bold;
+  font-size: 25px;
+}
+
 
 .bg-color-maps {
   background-color: #f1ebe4;
 }
 
-.bg-color-us {
-  background-color: #a7988b;
+.bg-choosUs {
+  background-color: #c4d3d6;
+}
+
+.card-choose {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  border-radius: 14px;
+  transition: all ease-in-out 0.3s;
+}
+.card-choose:hover {
+  border-radius: 14px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-body-choose {
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 18rem;
+}
+
+/* ----------------------------------------------------- */
+
+.bg-color-product {
+  background-color: #e1e1e1;
+  background-position: center center;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-widget {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+hr {
+  width: 100px;
+}
+
+hr.solid {
+  border-top: 3px solid #6e0d25;
 }
 
 .crop-img {
   object-fit: cover;
+}
+
+.container-footer h1 {
+  font-weight: bold;
 }
 
 .wrapper-icon img {
@@ -47,6 +135,7 @@ h4 {
 }
 
 .bg-color-footer {
+  border-radius: 100px 0 0 0;
   background-color: #6e0d25;
   color: #ffff;
 }
@@ -62,44 +151,96 @@ h4 {
     width: 8rem;
   }
   h4 {
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: "Josefin Sans", sans-serif;
     font-size: 1.9rem;
   }
   p {
     font-size: 0.8rem;
   }
-  .p-aboutUs p{
+  .p-aboutUs p {
     font-size: 0.9rem;
   }
   .p-product p {
     font-size: 0.9rem;
   }
-  .p-maps{
+  .p-maps {
     font-size: 0.9rem;
+  }
+  .size-card {
+    display: flex;
+    justify-content: center;
+    width: 20rem;
+  }
+  .card-choose {
+    margin-bottom: 1rem;
+  }
+  .card-title {
+    font-weight: bold;
+    font-size: 2rem;
+  }
+  .card-text {
+    font-size: 14px;
+  }
+  .bg-color-footer {
+    border-radius: 2rem 0 0 0;
+    background-color: #6e0d25;
+    color: #ffff;
   }
 }
 
 /* Tab */
-@media only screen and (min-width: 768px) and (max-width: 1023px){
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   nav img {
     width: 10rem;
   }
   h4 {
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: "Josefin Sans", sans-serif;
     font-size: 3.2rem;
   }
-  .p-home{
+
+  .card-choose {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45vh;
+  }
+
+  .card-title {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+
+  .card-body-choose {
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 12rem;
+  }
+
+  .card-text {
+    font-size: 14px;
+  }
+
+  .p-home {
     font-size: 1rem;
   }
 
-  .p-maps{
+  .p-maps {
     font-size: 0.9rem;
   }
+  .container-footer h1 {
+    font-size: 1.9rem;
+    font-weight: bold;
+  }
+  
 }
 
 /* Laptop */
 @media only screen and (min-width: 1024px) {
-  .bungkusan-h4-p{
+  .bungkusan-h4-p {
     padding-left: 10rem;
     padding-right: 10rem;
   }
