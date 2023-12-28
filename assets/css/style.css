@@ -1,5 +1,9 @@
+/* font-family: 'Josefin Sans', sans-serif;
+font-family: 'Poppins', sans-serif; */
+
 html,
 body {
+  font-family: 'Poppins', sans-serif;
   font-size: 16px;
 }
 
@@ -13,7 +17,7 @@ body {
 }
 
 .bg-image {
-  background-image: url("../img/img1.JPG");
+  background-image: url("../img/cover.png");
   background-size: cover;
   background-position: center center;
   min-height: 100vh;
@@ -28,7 +32,7 @@ span img {
   filter: drop-shadow(0px 0px 10px rgba(0 0 0 / 30%));
 }
 
-.lingkaran {
+/* .lingkaran {
   display: inline-block;
   border-radius: 50%;
   width: 150px;
@@ -40,10 +44,11 @@ span img {
 .lingkaran img {
   position: relative;
   top: 11px;
-}
+} */
 
 h4 {
   font-family: "Josefin Sans", sans-serif;
+  font-weight: bold;
   font-size: 50px;
 }
 
@@ -51,6 +56,11 @@ h4 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.card-title {
+  font-weight: bold;
+  font-size: 25px;
 }
 
 
@@ -66,7 +76,7 @@ h4 {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 35vh;
+  height: 50vh;
   border-radius: 14px;
   transition: all ease-in-out 0.3s;
 }
@@ -112,6 +122,10 @@ hr.solid {
 
 .crop-img {
   object-fit: cover;
+}
+
+.container-footer h1 {
+  font-weight: bold;
 }
 
 .wrapper-icon img {
@@ -161,7 +175,8 @@ hr.solid {
     margin-bottom: 1rem;
   }
   .card-title {
-    font-size: 1.2rem;
+    font-weight: bold;
+    font-size: 2rem;
   }
   .card-text {
     font-size: 14px;
@@ -190,6 +205,11 @@ hr.solid {
     height: 45vh;
   }
 
+  .card-title {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+
   .card-body-choose {
     position: relative;
     justify-content: center;
@@ -211,6 +231,11 @@ hr.solid {
   .p-maps {
     font-size: 0.9rem;
   }
+  .container-footer h1 {
+    font-size: 1.9rem;
+    font-weight: bold;
+  }
+  
 }
 
 /* Laptop */
