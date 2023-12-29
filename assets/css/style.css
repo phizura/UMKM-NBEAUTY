@@ -70,7 +70,56 @@ h4 {
     transform: rotate(360deg); 
   }
 }
+.aboutUs-pict{
+  height: auto;
+  width: 20;
+  transform: translate(-10%,0%); 
+}
+.aboutUs-pict img{
+  border-radius: 10px 100px 10px 10px;
+  width: 40rem;
+  top: 0;
+  left: 0 ;
+}
+.overlay {
+    position: relative;
+    background-color: rgba(169, 121, 32, 0.8);
+    color: rgb(179, 255, 0);
+    border-radius: 10px;
+    padding: 20px;
+    bottom: 0;
+    right: 0;
+    transform: translate(110%, -90%); 
+    z-index: 1; 
+    max-width: 20rem;
+    margin-left: auto;
+    margin-right: auto; 
+}
 
+/* Laptop */
+@media only screen and (min-width: 1024px) {
+  .bungkusan-h4-p{
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+}
+/* Tab */
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+  nav img {
+    width: 10rem;
+  }
+  h4 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 3.2rem;
+  }
+  .p-home{
+    font-size: 1rem;
+  }
+
+  .p-maps{
+    font-size: 0.9rem;
+  }
+} 
 /* HP */
 @media only screen and (max-width: 767px) {
   nav img {
@@ -98,28 +147,4 @@ h4 {
   }
 }
 
-/* Tab */
-@media only screen and (min-width: 768px) and (max-width: 1023px){
-  nav img {
-    width: 10rem;
-  }
-  h4 {
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 3.2rem;
-  }
-  .p-home{
-    font-size: 1rem;
-  }
 
-  .p-maps{
-    font-size: 0.9rem;
-  }
-}
-
-/* Laptop */
-@media only screen and (min-width: 1024px) {
-  .bungkusan-h4-p{
-    padding-left: 10rem;
-    padding-right: 10rem;
-  }
-}
