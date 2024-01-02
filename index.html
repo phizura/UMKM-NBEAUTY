@@ -27,7 +27,7 @@
   <body>
     <nav
       id="navbar"
-      class="navbar navbar-expand-lg navbar-dark shadow fixed-top px-2 mb-2"
+      class="navbar navbar-expand-lg navbar-dark shadow fixed-top px-0 py-0 mb-2"
     >
       <div class="container">
         <a class="navbar-brand" href="#home">
@@ -43,16 +43,16 @@
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarText"
-          aria-controls="navbarText"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div
-          class="collapse navbar-collapse justify-content-end"
-          id="navbarText"
+          class="collapse navbar-collapse justify-content-md-end text-center"
+          id="navbarNav"
         >
           <ul class="navbar-nav nav">
             <li class="nav-item">
@@ -77,14 +77,14 @@
 
     <!-- ---------------------------------------------------------- -->
 
-    <!-- CONTENT SATU HOME-->
+    <!-- ? CONTENT SATU HOME-->
     <section class="container-fluid bg-image" id="home">
       <div class="container text-center align-items-center bungkusan-h4-p">
         <span class="logo-img"
           ><img src="assets/img/main-logo.png" alt=""
         /></span>
         <div class="container pt-3">
-          <h4 class="head-4">"Temukan kecantikan sejati dengan N-Beauty"</h4>
+          <h4 class="head-4">"Temukan kecantikan sejati <br>dengan N-Beauty"</h4>
           <p class="p-home">
             Temukan rahasia kilau alami dan kepercayaan diri yang tak
             tertandingi. Dengan produk inovatif kami, hadirkan keindahan yang
@@ -96,8 +96,8 @@
       </div>
     </section>
 
-    <!-- CONTENT DUA Profile-->
-    <section class="container-fluid pt-5 pb-5 bg-profile">
+    <!-- ? CONTENT DUA Profile-->
+    <section class="container-fluid px-0" style="background-color: #EFEFEF;">
       <div class="container p-aboutUs">
         <div class="row" id="profile">
           <div class="col-md-6 pt-5 pb-5" style="display: flex;
@@ -123,16 +123,17 @@
           </div>
         </div>
       </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,256L48,218.7C96,181,192,107,288,106.7C384,107,480,181,576,213.3C672,245,768,235,864,197.3C960,160,1056,96,1152,69.3C1248,43,1344,53,1392,58.7L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
     </section>
 
-    <!-- CONTENT DUA Profile-Why choose us-->
-    <section class="container-fluid pt-5 pb-5 bg-choosUs">
+    <!-- ? CONTENT DUA Profile-Why choose us-->
+    <section class="container-fluid px-0">
       <div class="container">
-        <section class="container text-center">
+        <div class="container text-center">
           <h1 style="font-weight: bold">Why Choose Us?</h1>
-        </section>
-        <section class="container">
-          <div class="row pt-5">
+        </div>
+        <div class="container">
+          <div class="row py-5 mx-3">
             <div class="col-md-4">
               <div class="card card-choose">
                 <div class="card-body card-body-choose">
@@ -190,12 +191,13 @@
               </div>
             </div>
           </div>
-        </section>
+        </div>
       </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#EFEFEF" fill-opacity="1" d="M0,256L48,218.7C96,181,192,107,288,106.7C384,107,480,181,576,213.3C672,245,768,235,864,197.3C960,160,1056,96,1152,69.3C1248,43,1344,53,1392,58.7L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
     </section>
 
-    <!-- CONTENT TIGA Product-->
-    <section class="container-fluid bg-color-product">
+    <!-- ? CONTENT TIGA Product-->
+    <section class="container-fluid bg-color-product px-0">
       <div class="container">
         <div class="content-wrap text-center" id="products">
           <div class="head-text">
@@ -214,12 +216,14 @@
             </p>
           </div>
           <!-- korosel -->
+          <div></div>
         </div>
       </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,256L48,218.7C96,181,192,107,288,106.7C384,107,480,181,576,213.3C672,245,768,235,864,197.3C960,160,1056,96,1152,69.3C1248,43,1344,53,1392,58.7L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
     </section>
 
-    <!-- CONTENT EMPAT maps -->
-    <section class="container-fluid pt-5 pb-5 bg-color-maps lokasi" id="maps">
+    <!-- ? CONTENT EMPAT maps -->
+    <section class="container-fluid py-5 lokasi" id="maps">
       <div class="container p-maps">
         <div class="row justify-content-center pb-5 pt-5">
           <div class="col-md-4 text-center m-auto">
@@ -246,8 +250,8 @@
       </div>
     </section>
 
-    <!-- footer -->
-    <section class="container-fluid pt-5 pb-2 bg-color-footer" id="kontak">
+    <!-- ? footer -->
+    <section class="container-fluid py-5 bg-color-footer" id="kontak">
       <!-- footer/contact -->
       <footer class="container">
         <div class="row gx-5">
