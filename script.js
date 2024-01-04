@@ -24,26 +24,3 @@ $(document).ready(function () {
     $(".navbar-collapse").collapse("hide");
   });
 });
-
-$(".owl-carousel").owlCarousel({
-  loop: true,
-  margin: 15,
-  nav: true,
-  responsive: {
-    0: {
-      items: 1,
-    },
-    600: {
-      items: 2,
-    },
-    1000: {
-      items: 3,
-    },
-  },
-});
-
-$(document).ready(function () {
-  $(".navbar-toggler").click(function () {
-    $(".navbar-nav").toggleClass("text-center");
-  });
-});
