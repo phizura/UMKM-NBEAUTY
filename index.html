@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <title>N-Beauty</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/main-logo.png" />
+    <link rel="stylesheet" href="plugin/css/bootstrap-datepicker.min.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&family=Poppins:ital,wght@0,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script
+      src="https://kit.fontawesome.com/c0ad9aaa27.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- ? Navigasi-->
+    <nav
+      id="navbar"
+      class="navbar navbar-expand-lg navbar-dark shadow fixed-top px-0 py-0 mb-2"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#home">
+          <img
+            class="img-fluid"
+            src="assets/img/text-logo.png"
+            alt=""
+            width="209"
+            height="48"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-md-end text-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#profile">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#products">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#maps">Maps</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#kontak">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- ? Navigasi END-->
+
+    <!-- ? CONTENT SATU HOME-->
+    <section class="container-fluid bg-image" id="home">
+      <div class="container text-center align-items-center bungkusan-h4-p">
+        <span class="logo-img"
+          ><img src="assets/img/main-logo.png" alt=""
+        /></span>
+        <div class="container pt-3">
+          <h4 class="head-4">Temukan kecantikan sejati dengan N-Beauty</h4>
+          <p class="p-home">
+            Temukan rahasia kilau alami dan kepercayaan diri yang tak
+            tertandingi. Dengan produk inovatif kami, hadirkan keindahan yang
+            memukau setiap hari. Mulai petualangan kecantikan Anda sekarang
+            dengan N-Beauty!
+          </p>
+          <button
+            type="button"
+            class="btn btn-primary border-0"
+            style="
+              margin-top: 1rem;
+              border-radius: 40px;
+              background-color: black;
+            "
+            data-bs-toggle="modal"
+            data-bs-target="#formModal"
+            data-bs-whatever="modal-daftar"
+          >
+            Pesan Sekarang
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- ? END CONTENT SATU HOME-->
+
+    <!-- Start Modal -->
+    <div
+      class="modal fade"
+      id="formModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="FormModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="FormModalLabel">New message</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="dropdown-jenis" class="col-form-label">Jenis</label>
+                <select
+                  class="form-select"
+                  aria-label="Default select example"
+                  id="dropdown-jenis"
+                >
+                  <option selected>-- Pilih Jenis Layanan --</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="dropdown-produk" class="col-form-label"
+                  >Produk</label
+                >
+                <select
+                  class="form-select"
+                  aria-label="Default select example"
+                  id="dropdown-produk"
+                >
+                  <option selected>-- Pilih Produk --</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="date" class="col-form-label"
+                  >Pilih Tanggal Pesan:</label
+                >
+                <div class="form-floating mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="date"
+                    name="date"
+                    autocomplete="off"
+                    placeholder="tanggal"
+                    required
+                  />
+                  <label for="date">Tanggal Pesanan</label>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Tutup
+            </button>
+            <button type="button" class="btn btn-primary" id="submitData">
+              Kirim Pesan
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Modal -->
+
+    <!-- ? CONTENT DUA Profile-->
+    <section
+      class="container-fluid pb-0 pt-3 px-0"
+      style="background-color: #efefef"
+    >
+      <div
+        class="container"
+        data-aos="fade-up"
+        data-aos-delay="200"
+        data-aos-duration="1000"
+      >
+        <div class="row py-5 mx-3" id="profile">
+          <div class="col-md-6 pt-md-5 pb-5 isi-aboutUs">
+            <h2 style="font-weight: 700">Tentang Kami</h2>
+            <div>
+              <p>
+                Selamat datang di N Beauty, tempat kecantikan yang memberikan
+                pengalaman istimewa untuk perawatan kulit dan rambut. Kami
+                adalah UMKM kecantikan yang didedikasikan untuk membantu Anda
+                merayakan kecantikan alami Anda.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 text-center py-5 my-auto img-aboutUs">
+            <img
+              src="./assets/img/konsul.jpg"
+              alt=""
+              class="img-fluid img-thumbnail img-profile"
+            />
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#fff"
+          fill-opacity="1"
+          d="M0,256L48,218.7C96,181,192,107,288,106.7C384,107,480,181,576,213.3C672,245,768,235,864,197.3C960,160,1056,96,1152,69.3C1248,43,1344,53,1392,58.7L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- ? END CONTENT DUA Profile-->
+
+    <!-- ? CONTENT DUA Profile-Why choose us-->
+    <section class="container-fluid pb-0 pt-3 px-0">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h1 style="font-weight: bold">Kenapa harus N-Beauty?</h1>
+        </div>
+      </div>
+
+      <div class="row py-5 mx-5">
+        <div
+          class="col-md-4 text-center size-card-hp"
+          data-aos="fade-up"
+          data-aos-delay="100"
+          data-aos-duration="1000"
+        >
+          <div class="card-choose">
+            <div class="circle-icon position-relative mx-auto">
+              <img
+                src="assets/img/money.png"
+                class="position-absolute top-50 start-50 translate-middle"
+              />
+            </div>
+            <h3 class="mt-4">Harga terjangkau</h3>
+            <p class="mt-3">Dengan kualitas Terbaik, harga pun membaik</p>
+          </div>
+        </div>
+        <div
+          class="col-md-4 text-center size-card-hp"
+          data-aos="fade-up"
+          data-aos-delay="700"
+          data-aos-duration="1000"
+        >
+          <div class="card-choose">
+            <div class="circle-icon position-relative mx-auto">
+              <img
+                src="assets/img/rating.png"
+                class="position-absolute top-50 start-50 translate-middle"
+              />
+            </div>
+            <h3 class="mt-4">Kencantikan Alami</h3>
+            <p class="mt-3">
+              Kami percaya bahwa setiap individu memiliki kecantikan alami yang
+              perlu dirayakan.
+            </p>
+          </div>
+        </div>
+        <div
+          class="col-md-4 text-center size-card-hp"
+          data-aos="fade-up"
+          data-aos-delay="1300"
+          data-aos-duration="1000"
+        >
+          <div class="card-choose">
+            <div class="circle-icon position-relative mx-auto">
+              <img
+                src="assets/img/achivment.png"
+                class="position-absolute top-50 start-50 translate-middle"
+              />
+            </div>
+            <h3 class="mt-4">Terbaik di kelasnya</h3>
+            <p class="mt-3">
+              Kepuasan dan kenyamanan pelanggan adalah prioritas utama kami.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#EFEFEF"
+          fill-opacity="1"
+          d="M0,256L48,218.7C96,181,192,107,288,106.7C384,107,480,181,576,213.3C672,245,768,235,864,197.3C960,160,1056,96,1152,69.3C1248,43,1344,53,1392,58.7L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- ? END CONTENT DUA Profile-->
+
+    <!-- ? CONTENT TIGA Pelayanan-->
+    <section class="container-fluid bg-color-product pb-0 pt-3 px-0">
+      <div class="container">
+        <div class="content-wrap text-center" id="products">
+          <div
+            class="head-text"
+            data-aos="fade-up"
+            data-aos-delay="200"
+            data-aos-duration="1000"
+          >
+            <h2 style="font-weight: bold">Pelayanan</h2>
+          </div>
+          <div class="widget-line">
+            <div class="container-widget">
+              <hr class="solid" />
+            </div>
+          </div>
+          <div
+            class="text-paragraf"
+            data-aos="fade-up"
+            data-aos-delay="200"
+            data-aos-duration="1000"
+          >
+            <p style="font-size: 16px">
+              Cantik Indah aktif terlibat dalam kegiatan komunitas lokal dengan
+              menyelenggarakan lokakarya kecantikan dan memberikan dukungan
+              kepada organisasi amal kecantikan.
+            </p>
+          </div>
+          <!-- ? card -->
+          <div class="row mt-5">
+            <div
+              class="col-md-4 text-center mb-4"
+              data-aos="fade-up"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+            >
+              <div class="card-layanan">
+                <div class="radius-icon position-relative mx-auto">
+                  <img
+                    src="assets/img/Facial.jpg"
+                    class="img-fluid position-absolute top-50 start-50 translate-middle img-card-layanan"
+                  />
+                </div>
+                <h3 class="mt-4">Facial Treatment</h3>
+              </div>
+            </div>
+            <div
+              class="col-md-4 text-center mb-4"
+              data-aos="fade-up"
+              data-aos-delay="800"
+              data-aos-duration="1000"
+            >
+              <div class="card-layanan">
+                <div class="radius-icon position-relative mx-auto">
+                  <img
+                    src="assets/img/SPA.jpg"
+                    class="img-fluid position-absolute top-50 start-50 translate-middle img-card-layanan"
+                  />
+                </div>
+                <h3 class="mt-4">SPA</h3>
+              </div>
+            </div>
+            <div
+              class="col-md-4 text-center mb-4"
+              data-aos="fade-up"
+              data-aos-delay="1400"
+              data-aos-duration="1000"
+            >
+              <div class="card-layanan">
+                <div class="radius-icon position-relative mx-auto">
+                  <img
+                    src="assets/img/Hair Treatment.jpg"
+                    class="img-fluid position-absolute top-50 start-50 translate-middle img-card-layanan"
+                  />
+                </div>
+                <h3 class="mt-4">Hair Treatment</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#fff"
+          fill-opacity="1"
+          d="M0,256L48,218.7C96,181,192,107,288,106.7C384,107,480,181,576,213.3C672,245,768,235,864,197.3C960,160,1056,96,1152,69.3C1248,43,1344,53,1392,58.7L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- ? END CONTENT TIGA Pelayanan-->
+
+    <!-- ? CONTENT EMPAT maps -->
+    <section class="container-fluid py-5 px-0 lokasi" id="maps">
+      <div class="container p-maps">
+        <div class="row justify-content-center pb-5 pt-5">
+          <div class="col-md-4 text-center m-auto">
+            <h2 style="font-weight: bold">Kunjungi Kami Di</h2>
+            <p>
+              Melaten Lor, Plintahan, Kec. Pandaan, Pasuruan, Pandaan, Jawa
+              Timur 67156
+            </p>
+          </div>
+          <div class="col-md-8">
+            <div class="border-maps">
+              <iframe
+                class="maps"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d247.13661819249586!2d112.68735684976461!3d-7.663153666156154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7d942929f022b%3A0xd7ed32dce1151751!2sN-Beauty!5e0!3m2!1sid!2sid!4v1703414403144!5m2!1sid!2sid&t=satellite"
+                width="100%"
+                height="290"
+                style="border-radius: 14px"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ? END CONTENT EMPAT maps -->
+
+    <!-- ? footer -->
+    <section class="container-fluid py-5 bg-color-footer" id="kontak">
+      <!-- footer/contact -->
+      <footer class="container">
+        <div class="row gx-5">
+          <div class="col-12 col-md-4">
+            <div class="mb-5 container-footer">
+              <img
+                class="img-fluid"
+                src="assets/img/text-logo.png"
+                alt="text-logo"
+                width="230"
+                height="auto"
+              />
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="mb-5 container-footer">
+              <h1>Alamat Kami</h1>
+              <p>
+                Melaten Lor, Plintahan, Kec. Pandaan, Pasuruan, Pandaan, Jawa
+                Timur 67156
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="mb-5 container-footer">
+              <h1>Sosial Media</h1>
+              <div class="wrapper-icon d-flex">
+                <a href=""><img src="assets/img/wa.png" alt="whatsapp" /></a>
+                <a href=""
+                  ><img src="assets/img/instagram.png" alt="instagram"
+                /></a>
+                <a href=""><img src="assets/img/fb.png" alt="facebook" /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- footer/copyright -->
+        <div class="wrapper-last-footer d-flex justify-content-center">
+          <div>&copy; 2023 MUJAHIDIN. All Rights Reserved</div>
+        </div>
+      </footer>
+    </section>
+    <!-- ? END footer -->
+
+    <!-- ---------------------------------------------------------- -->
+    <!-- Bootstrap, Jquery,  Popper Configuration -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="plugin/js/bootstrap-datepicker.min.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
