@@ -1,0 +1,463 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+h4 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+/* ?-----------------------Scrolled background---------------------- */
+#navbar {
+  background-color: rgba(251, 251, 251, 0.1);
+  transition: background-color 0.5s;
+  color: white !important;
+}
+
+#navbar.scrolled {
+  background-color: rgba(230, 231, 230, 1);
+  color: black !important;
+}
+/* ?----------------------End Scrolled background---------------------- */
+/* *-----------------------Scrolled text-color---------------------- */
+.navbar-brand,
+.nav-link {
+  font-weight: 700;
+  font-size: 14px;
+  color: #fff !important;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+#navbar.scrolled .navbar-brand,
+#navbar.scrolled .nav-link {
+  font-size: 14px;
+  color: #000 !important;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+/* *--------------------End Scrolled text-color---------------------- */
+
+.nav-link:hover::after {
+  content: "";
+  display: block;
+  border-bottom: 3px solid #ffff;
+  width: 50%;
+  margin: auto;
+  padding-bottom: 5px;
+  margin-bottom: -8px;
+}
+
+#navbar.scrolled .nav-link:hover::after {
+  content: "";
+  display: block;
+  border-bottom: 3px solid #93866a;
+  width: 50%;
+  margin: auto;
+  padding-bottom: 5px;
+  margin-bottom: -8px;
+}
+
+
+.bg-image {
+  background-image: url("../img/cover.png");
+  background-size: cover;
+  background-position: center center;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffff;
+}
+
+.logo-img img {
+  width: 120px;
+  height: 120px;
+}
+
+.bg-color-product {
+  background-color: #efefef;
+  /* background-position: center center;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+
+.bg-color-maps {
+  background-color: #ffffff;
+}
+
+.isi-aboutUs{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.img-profile {
+  width: 80%;
+  height: auto;
+  object-fit: cover;
+}
+/* #E9E09F #73623F */
+/* !-------------------------why choose us-card---------------------- */
+.card-choose {
+  width: 100%;
+  height: 313px;
+  border-radius: 5px;
+  background: #6E0D25;
+  padding: 40px;
+  box-shadow: 0 0 7px 3px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease-in;
+}
+
+.circle-icon {
+  width: 70px;
+  height: 70px;
+  background-color: #e5e1da;
+  border-radius: 50%;
+  transition: all 0.1s ease-in;
+}
+
+.circle-icon img {
+  width: 50px;
+  height: 50px;
+}
+
+.card-choose h3 {
+  color: #fff;
+  font-weight: bolder;
+  font-size: 25px;
+  transition: all 0.2s ease-in;
+}
+
+.card-choose p {
+  color: #fff;
+  font-size: 16px;
+  transition: all 0.3s ease-in;
+}
+/* *--------------------------------- */
+/* ?------------------ketika di Hover--------------- */
+
+.card-choose:hover {
+  width: 100%;
+  height: 313px;
+  border-radius: 5px;
+  background: linear-gradient(183deg, #E9E09F, #73623F);
+  padding: 40px;
+  box-shadow: 0 0 7px 3px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease-in;
+}
+
+.card-choose:hover .circle-icon {
+  background-color: #fff;
+  transition: all 0.2s ease-in;
+}
+
+.circle-icon:hover img {
+  width: 50px;
+  height: 50px;
+}
+
+.card-choose:hover h3 {
+  color: #fff;
+  font-weight: bolder;
+  font-size: 25px;
+  transition: all 0.2s ease-in;
+}
+
+.card-choose:hover p {
+  color: #fff;
+  font-size: 16px;
+  transition: all 0.2s ease-in;
+}
+/* !----------------------END why choose us-card---------------------- */
+/* *----------------------Pelayanan---------------------- */
+
+.container-widget {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+hr {
+  width: 100px;
+}
+
+hr.solid {
+  border-top: 3px solid #6e0d25;
+}
+
+.radius-icon{
+  width: 390px;
+  height: 390px;
+  background-color: #fff;
+  border-radius: 24px;
+}
+
+.radius-icon img {
+  width: 370px; 
+  height: 370px;
+  border-radius: 14px;
+}
+
+.img-card-layanan {
+  object-fit: cover;
+}
+
+.card-layanan h3{
+  color: #000;
+  font-size: 24px;
+  font-weight: bolder;
+}
+
+/* *--------------------END Pelayanan---------------------- */
+
+.border-maps {
+  box-shadow: rgb(192, 184, 167, 0.6) 0px 30px 90px;
+}
+
+.container-footer h1 {
+  font-weight: bold;
+}
+
+.wrapper-icon img {
+  width: 35px;
+  height: 35px;
+  margin-right: 1rem;
+}
+
+.bg-color-footer {
+  border-radius: 100px 0 0 0;
+  background-color: #6e0d25;
+  color: #ffff;
+}
+
+.wrapper-last-footer {
+  padding: 1rem 0;
+  border-top: 2px solid #c4d3d6;
+}
+
+/*! HP */
+@media only screen and (max-width: 767px) {
+  nav img {
+    width: 8rem;
+  }
+  .nav-link:hover::after {
+    width: 5%;
+  }
+  
+  #navbar.scrolled .nav-link:hover::after {
+    width: 5%;
+  }
+  h4 {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.9rem;
+  }
+  p {
+    font-size: 0.8rem;
+  }
+  .isi-aboutUs{
+    padding-bottom: 20px !important;
+  }
+  .isi-aboutUs h2 {
+    padding-left: 1rem;
+    text-align: center;
+  }
+  .isi-aboutUs p {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  .img-profile {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  .img-aboutUs{
+    padding-top: 0 !important;
+  }
+  /* ! choose */
+  .card-choose {
+    width: 100%;
+    height: 313px;
+    padding: 22px;
+  }
+  .card-choose:hover {
+    width: 100%;
+    height: 313px;
+    padding: 22px;
+  }
+  
+  .circle-icon {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .circle-icon img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .row .size-card-hp {
+    margin-bottom: 1.3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    text-align: center !important;
+  }
+  .row .card-choose {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .card-choose h3 {
+    font-size: 20px;
+  }
+  
+  .card-choose p {
+    font-size: 12px;
+  }
+  .card-choose:hover h3 {
+    font-size: 20px;
+  }
+  .card-choose:hover p {
+    font-size: 12px;
+  }
+  /* ! end choose */
+
+  .p-maps {
+    font-size: 0.9rem;
+  }
+  .bg-color-footer {
+    border-radius: 2rem 0 0 0;
+    background-color: #6e0d25;
+    color: #ffff;
+  }
+}
+
+/* ! Tab */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  nav img {
+    width: 10rem;
+  }
+  .nav-link:hover::after {
+    width: 5%;
+  }
+  
+  #navbar.scrolled .nav-link:hover::after {
+    width: 5%;
+  }
+  h4 {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 3.2rem;
+  }
+
+  .isi-aboutUs {
+    padding-left: 1rem;
+  }
+  .isi-aboutUs h2 {
+    font-size: 30px;
+  }
+  .isi-aboutUs p {
+    font-size: 14px;
+  }
+
+  .img-profile {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .p-home {
+    font-size: 1rem;
+  }
+  /* ! choose */
+  .card-choose h3 {
+    font-size: 20px;
+  }
+  
+  .card-choose p {
+    font-size: 12px;
+  }
+  .card-choose:hover h3 {
+    font-size: 20px;
+  }
+  
+  .card-choose:hover p {
+    font-size: 12px;
+  }
+  /* ! end choose */
+
+  .p-maps {
+    font-size: 0.9rem;
+  }
+  .container-footer h1 {
+    font-size: 1.9rem;
+    font-weight: bold;
+  }
+  /* * layanan */
+  .radius-icon{
+    width: 13rem;
+    height: 13rem;
+    background-color: #fff;
+    border-radius: 24px;
+  }
+  
+  .radius-icon img {
+    width: 12rem; 
+    height: 12rem;
+  }
+  
+  .img-card-layanan {
+    object-fit: cover;
+  }
+  
+  .card-layanan h3{
+    color: #000;
+    font-size: 24px;
+    font-weight: bolder;
+  }
+}
+
+/*! Laptop */
+@media only screen and (min-width: 1024px) {
+  .bungkusan-h4-p {
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+
+  /* * layanan */
+  .radius-icon{
+    width: 300px;
+    height: 300px;
+    background-color: #fff;
+    border-radius: 24px;
+  }
+  
+  .radius-icon img {
+    width: 280px; 
+    height: 280px;
+  }
+  
+  .img-card-layanan {
+    object-fit: cover;
+  }
+  
+  .card-layanan h3{
+    color: #000;
+    font-size: 24px;
+    font-weight: bolder;
+  }
+}
