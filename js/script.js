@@ -62,7 +62,7 @@ Aku mau dong perawatan *${produk}*,
 Aku *${jenisLayanan}*nya tanggal *${tanggalPesanan}* yaa`
   
       const kirimPesan = (jenisLayanan == 'Home care') ? isiPesan1 : isiPesan2;
-      let redirectLink =  `https://api.whatsapp.com/send?phone=6285236907265&text=${encodeURIComponent(kirimPesan)}`
+      let redirectLink =  `https://api.whatsapp.com/send?phone=6289650109819&text=${encodeURIComponent(kirimPesan)}`
       // window.location.href = redirectLink
       window.open(redirectLink, '_blank')
       // alert(kirimPesan)
